@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Naruto World | Shinobi Universe</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top">
+
+    <div class="container">
+
+        <a class="navbar-brand logo" href="#home">
+            <span>🍃</span> NARUTO
+        </a>
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#home">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#characters">
+                        Characters
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#villages">
+                        Villages
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#anime">
+                        Anime
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallery">
+                        Gallery
+                    </a>
+                </li>
+
+                <li class="nav-item">
+
+                    <button
+                        class="search-btn ms-lg-3"
+                        onclick="openSearch()">
+
+                        <i class="bi bi-search"></i>
+
+                    </button>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<!-- =====================================================
+     HERO SLIDER
+===================================================== -->
+
+<header id="home" class="hero-section">
+
+    <div
+        id="narutoSlider"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+        data-bs-interval="4000"
+        data-bs-pause="false">
+
+
+        <!-- INDICATORS -->
+
+        <div class="carousel-indicators">
+
+            <button
+                type="button"
+                data-bs-target="#narutoSlider"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true">
+            </button>
+
+            <button
+                type="button"
+                data-bs-target="#narutoSlider"
+                data-bs-slide-to="1">
+            </button>
+
+            <button
+                type="button"
+                data-bs-target="#narutoSlider"
+                data-bs-slide-to="2">
+            </button>
+
+            <button
+                type="button"
+                data-bs-target="#narutoSlider"
+                data-bs-slide-to="3">
+            </button>
+
+        </div>
+
+
+
+        <!-- SLIDES -->
+
+        <div class="carousel-inner">
+
+
+            <!-- SLIDE 1 -->
+
+            <div class="carousel-item active">
+
+                <div
+                    class="hero-slide"
+                    style="background-image: url('image/naruto.jpg');">
+
+                    <div class="hero-overlay"></div>
+
+                    <div class="container hero-content">
+
+                        <div class="hero-text-box">
+
+                            <p class="hero-small">
+                                WELCOME TO THE SHINOBI WORLD
+                            </p>
+
+                            <h1>
+                                NARUTO
+                                <span>UZUMAKI</span>
+                            </h1>
+
+                            <p class="hero-description">
+                                Enter the world of shinobi,
+                                legendary ninja, powerful jutsu
+                                and unforgettable adventures.
+                            </p>
+
+                            <div class="hero-buttons">
+
+                                <a
+                                    href="#characters"
+                                    class="btn btn-orange">
+
+                                    Explore Characters
+                                    <i class="bi bi-arrow-right"></i>
+
+                                </a>
+
+                                <a
+                                    href="#anime"
+                                    class="btn btn-outline-light">
+
+                                    Explore Anime
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- SLIDE 2 -->
+
+            <div class="carousel-item">
+
+                <div
+                    class="hero-slide"
+                    style="background-image: url('image/itachi.png');">
+
+                    <div class="hero-overlay"></div>
+
+                    <div class="container hero-content">
+
+                        <div class="hero-text-box">
+
+                            <p class="hero-small">
+                                THE PATH OF A SHINOBI
+                            </p>
+
+                            <h1>
+                                NINJA
+                                <span>WAY</span>
+                            </h1>
+
+                            <p class="hero-description">
+                                Strength comes from the bonds
+                                we build and the challenges
+                                we overcome.
+                            </p>
+
+                            <div class="hero-buttons">
+
+                                <a
+                                    href="#villages"
+                                    class="btn btn-orange">
+
+                                    Explore Villages
+                                    <i class="bi bi-arrow-right"></i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- SLIDE 3 -->
+
+            <div class="carousel-item">
+
+                <div
+                    class="hero-slide"
+                    style="background-image: url('image/kakashi.jpg');">
+
+                    <div class="hero-overlay"></div>
+
+                    <div class="container hero-content">
+
+                        <div class="hero-text-box">
+
+                            <p class="hero-small">
+                                LEGENDARY SHINOBI
+                            </p>
+
+                            <h1>
+                                NEVER
+                                <span>GIVE UP</span>
+                            </h1>
+
+                            <p class="hero-description">
+                                Train harder, believe in yourself
+                                and follow your own ninja way.
+                            </p>
+
+                            <div class="hero-buttons">
+
+                                <a
+                                    href="#gallery"
+                                    class="btn btn-orange">
+
+                                    View Gallery
+                                    <i class="bi bi-arrow-right"></i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- SLIDE 4 -->
+
+            <div class="carousel-item">
+
+                <div
+                    class="hero-slide"
+                    style="background-image: url('image/akatsuki.jpg');">
+
+                    <div class="hero-overlay"></div>
+
+                    <div class="container hero-content">
+
+                        <div class="hero-text-box">
+
+                            <p class="hero-small">
+                                THE WORLD OF NARUTO
+                            </p>
+
+                            <h1>
+                                BELIEVE
+                                <span>IT!</span>
+                            </h1>
+
+                            <p class="hero-description">
+                                Discover the stories, characters
+                                and villages of the shinobi world.
+                            </p>
+
+                            <div class="hero-buttons">
+
+                                <a
+                                    href="#characters"
+                                    class="btn btn-orange">
+
+                                    Start Exploring
+                                    <i class="bi bi-arrow-right"></i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PREVIOUS -->
+
+        <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#narutoSlider"
+            data-bs-slide="prev">
+
+            <span class="carousel-control-prev-icon"></span>
+
+            <span class="visually-hidden">
+                Previous
+            </span>
+
+        </button>
+
+
+
+        <!-- NEXT -->
+
+        <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#narutoSlider"
+            data-bs-slide="next">
+
+            <span class="carousel-control-next-icon"></span>
+
+            <span class="visually-hidden">
+                Next
+            </span>
+
+        </button>
+
+    </div>
+
+
+
+    <!-- SCROLL -->
+
+    <div class="scroll-down">
+
+        <span>SCROLL DOWN</span>
+
+        <i class="bi bi-chevron-down"></i>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     INTRO
+===================================================== -->
+
+<section class="intro-section">
+
+    <div class="container">
+
+        <div class="section-heading text-center">
+
+            <p class="orange-text">
+                THE WORLD OF SHINOBI
+            </p>
+
+            <h2>
+                BELIEVE IT!
+            </h2>
+
+            <p>
+                Discover legendary characters, powerful clans,
+                hidden villages and epic anime stories.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CHARACTERS
+===================================================== -->
+
+<section
+    id="characters"
+    class="characters-section section-padding">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <div>
+
+                <p class="orange-text">
+                    LEGENDARY SHINOBI
+                </p>
+
+                <h2>
+                    POPULAR CHARACTERS
+                </h2>
+
+            </div>
+
+            <button
+                class="view-btn"
+                onclick="showCharacters()">
+
+                View All
+                <i class="bi bi-arrow-right"></i>
+
+            </button>
+
+        </div>
+
+
+
+        <div class="row g-4">
+
+
+            <!-- NARUTO -->
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="character-card">
+
+                    <div
+                        class="character-image"
+                        style="background-image: url('image/narutoex.jpg');">
+                    </div>
+
+                    <div class="character-info">
+
+                        <span>
+                            UZUMAKI CLAN
+                        </span>
+
+                        <h3>
+                            Naruto Uzumaki
+                        </h3>
+
+                        <p>
+                            The future Hokage of the Hidden Leaf.
+                        </p>
+
+                        <button
+                            onclick="characterInfo('Naruto Uzumaki')">
+                            <a href="naruto (7).html">View Profile</a>
+                        </button>
+
+                    
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- SASUKE -->
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="character-card">
+
+                    <div
+                        class="character-image"
+                        style="background-image: url('image/sasukeex.jpg');">
+                    </div>
+
+                    <div class="character-info">
+
+                        <span>
+                            UCHIHA CLAN
+                        </span>
+
+                        <h3>
+                            Sasuke Uchiha
+                        </h3>
+
+                        <p>
+                            A powerful shinobi of the Uchiha clan.
+                        </p>
+
+                        <button
+                            onclick="characterInfo('Sasuke Uchiha')">
+                            <a href="sasuke.html">View Profile</a>
+                        </button>
+
+                        
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- SAKURA -->
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="character-card">
+
+                    <div
+                        class="character-image"
+                        style="background-image: url('image/sakuraex.jpg');">
+                    </div>
+
+                    <div class="character-info">
+
+                        <span>
+                            TEAM 7
+                        </span>
+
+                        <h3>
+                            Sakura Haruno
+                        </h3>
+
+                        <p>
+                            A skilled medical ninja and Team 7 member.
+                        </p>
+
+                        <button
+                            onclick="characterInfo('Sakura Haruno')">
+                            <a href="sakura.html">View Profile</a>
+                    </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- KAKASHI -->
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="character-card">
+
+                    <div
+                        class="character-image"
+                        style="background-image: url('image/kakashiex.jpg');">
+                    </div>
+
+                    <div class="character-info">
+
+                        <span>
+                            HATAKE CLAN
+                        </span>
+
+                        <h3>
+                            Kakashi Hatake
+                        </h3>
+
+                        <p>
+                            The legendary Copy Ninja and Team 7 leader.
+                        </p>
+
+                        <button
+                            onclick="characterInfo('Kakashi Hatake')">
+                            <a href="kakashi.html">View Profile</a>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     VILLAGES
+===================================================== -->
+
+<section
+    id="villages"
+    class="villages-section section-padding">
+
+    <div class="container">
+
+        <div class="section-heading text-center">
+
+            <p class="orange-text">
+                HIDDEN VILLAGES
+            </p>
+
+            <h2>
+                SHINOBI VILLAGES
+            </h2>
+
+        </div>
+
+
+
+        <div class="row g-4 mt-3">
+
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="village-card">
+
+                    <div class="village-icon">
+                        🍃
+                    </div>
+
+                    <h3>
+                        KONOHA
+                    </h3>
+
+                    <p>
+                        Hidden Leaf Village
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="village-card">
+
+                    <div class="village-icon">
+                        🏜️
+                    </div>
+
+                    <h3>
+                        SUNA
+                    </h3>
+
+                    <p>
+                        Hidden Sand Village
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="village-card">
+
+                    <div class="village-icon">
+                        🌊
+                    </div>
+
+                    <h3>
+                        KIRI
+                    </h3>
+
+                    <p>
+                        Hidden Mist Village
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="village-card">
+
+                    <div class="village-icon">
+                        ⚡
+                    </div>
+
+                    <h3>
+                        KUMO
+                    </h3>
+
+                    <p>
+                        Hidden Cloud Village
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ANIME
+===================================================== -->
+
+<section
+    id="anime"
+    class="anime-section section-padding">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <div>
+
+                <p class="orange-text">
+                    ANIME SERIES
+                </p>
+
+                <h2>
+                    NARUTO UNIVERSE
+                </h2>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="row g-4">
+
+
+            <div class="col-md-4">
+
+                <div class="anime-card">
+
+                    <div class="anime-number">
+                        01
+                    </div>
+
+                    <h3>
+                        NARUTO
+                    </h3>
+
+                    <p>
+                        Follow Naruto's beginning as a young ninja
+                        from the Hidden Leaf Village.
+                    </p>
+
+                    <a href="#home">
+                        Explore
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col-md-4">
+
+                <div class="anime-card">
+
+                    <div class="anime-number">
+                        02
+                    </div>
+
+                    <h3>
+                        NARUTO SHIPPUDEN
+                    </h3>
+
+                    <p>
+                        Continue the shinobi journey with bigger
+                        battles and stronger enemies.
+                    </p>
+
+                    <a href="#home">
+                        Explore
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col-md-4">
+
+                <div class="anime-card">
+
+                    <div class="anime-number">
+                        03
+                    </div>
+
+                    <h3>
+                        BORUTO
+                    </h3>
+
+                    <p>
+                        Discover the next generation of shinobi
+                        and a new ninja era.
+                    </p>
+
+                    <a href="#home">
+                        Explore
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     GALLERY
+===================================================== -->
+
+<section
+    id="gallery"
+    class="gallery-section section-padding">
+
+    <div class="container">
+
+        <div class="section-heading text-center">
+
+            <p class="orange-text">
+                SHINOBI MOMENTS
+            </p>
+
+            <h2>
+                GALLERY
+            </h2>
+
+            <p>
+                Click any image to view it in full size.
+            </p>
+
+        </div>
+
+
+
+        <div class="row g-3 mt-3">
+
+
+            <!-- IMAGE 1 -->
+
+            <div class="col-6 col-md-3">
+
+                <div
+                    class="gallery-item"
+                    onclick="openGallery('image/pain gg.jpg')">
+
+                    <img
+                        src="image/pain gg.jpg"
+                        alt="Naruto">
+
+                </div>
+
+            </div>
+
+
+
+            <!-- IMAGE 2 -->
+
+            <div class="col-6 col-md-3">
+
+                <div
+                    class="gallery-item"
+                    onclick="openGallery('images/naruto-2.jpg')">
+
+                    <img
+                        src="image/uzumaki gg.jpg"
+                        alt="Naruto">
+
+                </div>
+
+            </div>
+
+
+
+            <!-- IMAGE 3 -->
+
+            <div class="col-6 col-md-3">
+
+                <div
+                    class="gallery-item"
+                    onclick="openGallery('images/naruto-3.jpg')">
+
+                    <img
+                        src="image/naruto gg.jpg"
+                        alt="Naruto">
+
+                </div>
+
+            </div>
+
+
+
+            <!-- IMAGE 4 -->
+
+            <div class="col-6 col-md-3">
+
+                <div
+                    class="gallery-item"
+                    onclick="openGallery('images/naruto-4.jpg')">
+
+                    <img
+                        src="image/itcahi.jpg"
+                        alt="Naruto">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+
+            <div class="col-lg-5">
+
+                <div class="footer-logo">
+                    🍃 NARUTO
+                </div>
+
+                <p>
+                    Welcome to the Naruto Shinobi World.
+                    Explore characters, villages, anime and more.
+                </p>
+
+            </div>
+
+
+
+            <div class="col-6 col-lg-2">
+
+                <h4>
+                    EXPLORE
+                </h4>
+
+                <a href="#home">
+                    Home
+                </a>
+
+                <a href="#characters">
+                    Characters
+                </a>
+
+                <a href="#villages">
+                    Villages
+                </a>
+
+                <a href="#anime">
+                    Anime
+                </a>
+
+            </div>
+
+
+
+            <div class="col-6 col-lg-2">
+
+                <h4>
+                    DISCOVER
+                </h4>
+
+                <a href="#gallery">
+                    Gallery
+                </a>
+
+                <a href="#characters">
+                    Shinobi
+                </a>
+
+                <a href="#villages">
+                    Clans
+                </a>
+
+                <a href="#anime">
+                    Stories
+                </a>
+
+            </div>
+
+
+
+            <div class="col-lg-3">
+
+                <h4>
+                    FOLLOW US
+                </h4>
+
+                <div class="social-icons">
+
+                    <a href="#">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Naruto World. Fan-made website.
+            </p>
+
+            <a href="#home">
+                Back to top ↑
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     SEARCH OVERLAY
+===================================================== -->
+
+<div
+    id="searchOverlay"
+    class="search-overlay">
+
+    <div class="search-box">
+
+        <button
+            class="close-search"
+            onclick="closeSearch()">
+
+            ×
+
+        </button>
+
+        <h2>
+            Search Shinobi World
+        </h2>
+
+        <div class="search-input">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search character..."
+            >
+
+            <button onclick="searchCharacter()">
+
+                <i class="bi bi-search"></i>
+
+            </button>
+
+        </div>
+
+        <p id="searchResult"></p>
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     GALLERY POPUP
+===================================================== -->
+
+<div
+    id="galleryModal"
+    class="gallery-modal">
+
+    <button
+        class="gallery-close"
+        onclick="closeGallery()">
+
+        &times;
+
+    </button>
+
+    <img
+        id="galleryModalImage"
+        src=""
+        alt="Gallery Image">
+
+</div>
+
+
+
+<!-- BOOTSTRAP JS -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+<!-- YOUR JS -->
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
